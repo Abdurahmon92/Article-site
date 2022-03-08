@@ -1,0 +1,126 @@
+/* global styles  */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'bebas Neue', 'Brush Script MT', cursive;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+/* global styles end */
+
+/* main section styles */
+.site-main {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* hero section styles */
+
+.hero-section {
+    width: 100%;
+    max-width: 600px;
+    background-image: url(./image/left-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.hero-section__content {
+    width: 285px;
+}
+
+.hero-section__title {
+    font-size: 24px;
+    color: #fff;
+    height: 28.8px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.hero-section__link {
+    display: inline-flex;
+    padding: 12px 24px;
+    background-color: #1E90FF;
+    color:#fff;
+    text-decoration: none;  
+}
+
+
+.hero-section-link-wraper {
+    display: flex; 
+ 
+}
+
+.hero-section-link-wraper::before{
+    content: "";
+    width: 20px;
+    height: 19px;
+    background-image: url(./image/Vector.svg);
+    margin-right: 12px;
+}
+
+
+.hero-section-link-text {
+    font-size: 16px;
+    line-height: 24ph;
+
+}
+
+
+
+
+/* hero section styles end */
+/* main section styles end*/
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'IM Fell English SC', serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+
+
+
+
+
+/* retina dispaly media  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .hero-section {
+        background-image: url(./image/left-bg@2x.jpg);     
+    }   
+
+}
+
+/* retina dispaly media end  */
