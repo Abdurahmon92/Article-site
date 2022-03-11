@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -15,7 +16,6 @@ html {
 }
 
 body {
-    background-color: rgb(172, 6, 6);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -74,6 +74,14 @@ body {
     background-color: #1E90FF;
     color:#fff;
     text-decoration: none;  
+}
+
+.hero-section__link:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.hero-section__link:active {
+    background-color: rgba(30, 144, 255, 0.6);
 }
 
 
@@ -152,6 +160,18 @@ body {
     margin-bottom: 4px;
 
 }
+
+.section-videos__link {
+    color:#222222;
+}
+
+.section-videos__link :hover {
+    color: #1E90FF;
+}
+
+.section-videos__link :active {
+    color: rgba(30, 144, 255, 0.6);
+}
 .section-videos__item-conrent-footer {
   display: flex;
   align-items: center;
@@ -203,6 +223,14 @@ body {
  background-color: #1E90FF;
  border: none;
  cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.button:active{
+    background-color: rgba(30, 144, 255, 0.6);
 }
 /* section videos style end*/
 
